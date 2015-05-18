@@ -200,12 +200,12 @@ src/ext/astyle:
 src/ext/cpputil:
 	git clone git://github.com/eschkufz/cpputil.git src/ext/cpputil && \
 	cd src/ext/cpputil && \
-	git checkout -b e7b99c1
+	git checkout e7b99c1
 
 src/ext/x64asm:
 	git clone git://github.com/eschkufz/x64asm.git src/ext/x64asm && \
 	cd src/ext/x64asm && \
-	git checkout -b 0ed4faf
+	git checkout c7c714411 
 
 src/ext/gtest-1.7.0/libgtest.a:
 	cmake src/ext/gtest-1.7.0/CMakeLists.txt

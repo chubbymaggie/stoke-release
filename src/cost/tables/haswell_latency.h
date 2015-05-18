@@ -1,4 +1,4 @@
-// Copyright 2013-2015 Eric Schkufza, Rahul Sharma, Berkeley Churchill, Stefan Heule
+// Copyright 2013-2015 Stanford University
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -1978,6 +1978,7 @@
 , 1 // PSLLQ xmm, imm8
 , 999 // PSLLQ xmm, m128
 , 2 // PSLLQ xmm, xmm
+, 1 // PSLLW mm, imm8
 , 999 // PSLLW mm, m64
 , 1 // PSLLW mm, mm
 , 1 // PSLLW xmm, imm8

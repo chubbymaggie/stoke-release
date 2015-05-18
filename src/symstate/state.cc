@@ -1,4 +1,4 @@
-// Copyright 2013-2015 Eric Schkufza, Rahul Sharma, Berkeley Churchill, Stefan Heule
+// Copyright 2013-2015 Stanford University
 //
 // Licensed under the Apache License, Version 2.0 (the License);
 // you may not use this file except in compliance with the License.
@@ -313,6 +313,10 @@ SymBitVector SymState::get_addr(M<T> memory) const {
     default:
       assert(false);
     }
+  }
+
+  if(memory.addr_or()) {
+    address = SymBitVector::constant(32, 0) || address[31][0];
   }
 
   return address;

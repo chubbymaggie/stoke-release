@@ -1,4 +1,4 @@
-// Copyright 2013-2015 Eric Schkufza, Rahul Sharma, Berkeley Churchill, Stefan Heule
+// Copyright 2013-2015 Stanford University
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -378,7 +378,7 @@ void Cfg::recompute_defs_loop_free() {
       def_outs_[b] = def_ins_[blocks_[b]];
     } else {
       const auto idx = blocks_[b] + num_instrs(b) - 1;
-      def_outs_[i] = def_ins_[idx];
+      def_outs_[b] = def_ins_[idx];
 
       const auto& instr = code_[idx];
       def_outs_[b] |= must_write_set(instr);
