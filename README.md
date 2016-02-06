@@ -13,9 +13,9 @@ outperform the code produced by general-purpose and domain-specific compilers,
 STOKE has appeared in a number of publications. For a thorough introduction to
 the design of STOKE, see:
 
-- **Stochastic Superoptimization** -- ASPLOS 2013 ([link](http://cs.stanford.edu/people/eschkufz/research/asplos291-schkufza.pdf)):
-- **Data-Driven Equivalence Checking** -- OOPSLA 2013 ([link](http://cs.stanford.edu/people/eschkufz/research/oopsla011-sharma.pdf)):
-- **Stochastic Optimization of Floating-Point Programs with Tunable Precision** -- PLDI 2014 ([link](http://cs.stanford.edu/people/eschkufz/research/pldi52-schkufza.pdf)):
+- **Stochastic Superoptimization** -- ASPLOS 2013 ([link](http://cs.stanford.edu/people/eschkufz/docs/asplos291-schkufza.pdf)):
+- **Data-Driven Equivalence Checking** -- OOPSLA 2013 ([link](http://cs.stanford.edu/people/eschkufz/docs/oopsla011-sharma.pdf)):
+- **Stochastic Optimization of Floating-Point Programs with Tunable Precision** -- PLDI 2014 ([link](http://cs.stanford.edu/people/eschkufz/docs/pldi52-schkufza.pdf)):
 
 Table of Contents
 =====
@@ -49,7 +49,7 @@ To check what level of hardware support you have, run:
     
 and check if the following cpu flags are present:
 
-    $ flags: ... avx avx2 bmi bmi2 popcnt ...
+    flags: ... avx avx2 bmi bmi2 popcnt ...
 
 If you don't have 'avx' or 'avx2', you will need to compile for nehalem.  If
 you have 'avx', but not avx2, you will compile for 'sandybridge'.  If you have
@@ -78,7 +78,7 @@ Downloading and Building STOKE
 The entire STOKE code base, is available on github under the Apache Software
 License version 2.0. To clone a copy of the source code, type:
 
-    $ git clone https://github.com/eschkufz/stoke-release
+    $ git clone https://github.com/StanfordPL/stoke-release
 
 The remainder of STOKE's software dependencies are available on github and will
 be downloaded automatically the first time that STOKE is built. To build stoke for a Haswell system
